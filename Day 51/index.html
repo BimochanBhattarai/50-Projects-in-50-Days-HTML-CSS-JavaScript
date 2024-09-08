@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <section class="picture__viewer">
+                <div class="container">
+                    <div class="picture__header">
+                        <span>
+                            Bucket List Of
+                        </span>
+                        <h1>
+                            PLACES YOU MUST VISIT
+                        </h1>
+                    </div>
+                    <div class="picture__holder">
+                        <figure class="pic__container">
+                            <img id="picture__contain" src="" alt="Place to visit">
+                        </figure>
+                        <div class="picture__holder__body">
+                            <h2 id="picture__title"></h2>
+                            <p id="picture__info"></p>
+                        </div>
+                        <div class="btn toggeler" onclick="gotoDashboard()">
+                            Goto Dashboard
+                        </div>
+                    </div>
+                    <div class="enter__data">
+                        <div class="buttons__list">
+                            <ul>
+                                <li>
+                                    <div id="insert__btn" class="btn" onclick="gotoInsert()">
+                                    Insert
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="remove__btn" class="btn bg-white" onclick="gotoRemove()">
+                                    Remove
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="insert__form">
+                            <form action="submit">
+                                <div class="form__input">
+                                    <input type="text" name="insert__photo" id="insert__photo" placeholder="Enter link of Photo">
+                                </div>
+                                <div class="form__input">
+                                    <input type="text" name="insert__location" id="insert__location"
+                                    placeholder="Enter Location of the Place">
+                                </div>
+                                <div class="form__input">
+                                    <textarea name="insert__info" id="insert__info"
+                                    placeholder="Enter the information about the place"></textarea>
+                                </div>
+                                <div class="insert__input">
+                                    <button class="btn">Insert Data</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="remove__form">
+                            <form action="submit">
+                                <div class="form__input">
+                                    <input type="text" name="insert__photo" id="insert__photo" placeholder="Enter link of Photo">
+                                </div>
+                                <div class="form__input">
+                                    <input type="text" name="insert__location" id="insert__location"
+                                    placeholder="Enter Location of the Place">
+                                </div>
+                                <!-- <div class="form__input">
+                                    <textarea name="insert__info" id="insert__info"
+                                    placeholder="Enter the information about the place"></textarea>
+                                </div> -->
+                                <div class="insert__input">
+                                    <button class="btn">Insert Data</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="display__data">
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
